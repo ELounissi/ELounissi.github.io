@@ -177,7 +177,10 @@
     border-left: 4px solid var(--accent-lit);
     border-radius: 12px;
     box-shadow: var(--shadow);
-    padding: 1.75rem 1.9rem;
+    /* The 4px accent border eats into the box, so the left padding is reduced
+       by 3px to put this text on the same line as the project card text,
+       which sits behind a 1px border. */
+    padding: 1.75rem 1.9rem 1.75rem calc(1.65rem - 3px);
     margin: 0;
     font-family: var(--serif);
     font-optical-sizing: auto;
@@ -189,7 +192,13 @@
 
   /* ============ body ============ */
 
-  .content { padding: 3rem 0 4.5rem; }
+  /* Vertical only. A `padding` shorthand here would reset the horizontal
+     padding .inner supplies, and drop this whole column 27px to the left of
+     the name in the hero. */
+  .content {
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+  }
 
   h2 {
     display: flex;
@@ -213,6 +222,17 @@
 
   p { margin: 0 0 1.1rem; }
   p:last-child { margin-bottom: 0; }
+
+  /* Justified, with hyphenation on. Justifying without it forces the browser to
+     stretch word spacing instead of breaking words, which opens rivers of white
+     down a narrow column. The lang attribute on <html> is what tells the
+     hyphenation engine which dictionary to use. */
+  .lead, .project p, .note {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-chars: 7 3 3;
+  }
 
   /* ---- projects ---- */
 
@@ -284,7 +304,7 @@
     color: var(--muted);
     font-size: 0.945rem;
     margin: 1.35rem 0 0;
-    padding: 0.9rem 1.15rem;
+    padding: 0.95rem 1.65rem;
     background: var(--accent-bg);
     border-radius: 9px;
   }
