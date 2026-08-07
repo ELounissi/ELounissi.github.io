@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elyes Lounissi</title>
+<meta name="description" content="Elyes Lounissi, PhD student in computer science at UQAM, Montreal. Machine learning, deep learning and reinforcement learning.">
+<meta name="author" content="Elyes Lounissi">
+<link rel="canonical" href="https://elounissi.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Elyes Lounissi">
+<meta property="og:description" content="PhD student in computer science at UQAM, Montreal. Machine learning, deep learning and reinforcement learning.">
+<meta property="og:url" content="https://elounissi.github.io/">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+
+<style>
+  :root {
+    --ink:      #1a1a1a;
+    --muted:    #5c5c5c;
+    --faint:    #8a8a8a;
+    --rule:     #e2e2e2;
+    --bg:       #fdfdfc;
+    --card:     #f7f7f5;
+    --accent:   #1f5c8b;
+    --measure:  42rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:    #e8e8e6;
+      --muted:  #a8a8a4;
+      --faint:  #7d7d79;
+      --rule:   #2c2c2a;
+      --bg:     #131312;
+      --card:   #1c1c1a;
+      --accent: #7fb2d9;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    font-feature-settings: "kern" 1;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.4rem;
+    line-height: 1.2;
+  }
+
+  .role {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 0.15rem;
+  }
+
+  .place {
+    color: var(--faint);
+    font-size: 0.95rem;
+    margin: 0 0 2.4rem;
+  }
+
+  h2 {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 3rem 0 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  p { margin: 0 0 1.1rem; }
+  p:last-child { margin-bottom: 0; }
+
+  .lead { font-size: 1.05rem; }
+
+  /* Education */
+  .edu { margin: 0; }
+  .edu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .edu div:last-child { border-bottom: 0; }
+  .edu dt { font-weight: 550; }
+  .edu dd {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    text-align: right;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .edu .school {
+    display: block;
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-weight: 400;
+    margin-top: 0.15rem;
+  }
+
+  /* Projects */
+  .project {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 7px;
+    padding: 1.15rem 1.3rem;
+    margin-bottom: 0.9rem;
+  }
+  .project h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.02rem;
+    font-weight: 600;
+  }
+  .project p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .tags {
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    color: var(--faint);
+    letter-spacing: 0.01em;
+  }
+
+  .note {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 1.2rem;
+  }
+
+  /* Contact */
+  .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.6rem;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--faint);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 34rem) {
+    .wrap { padding-top: 3.2rem; }
+    h1 { font-size: 1.75rem; }
+    .edu div { display: block; }
+    .edu dd { text-align: left; margin-top: 0.2rem; }
+  }
+</style>
+</head>
+
+<body>
+<main class="wrap">
+
+  <header>
+    <h1>Elyes Lounissi</h1>
+    <p class="role">PhD student in computer science, Université du Québec à Montréal</p>
+    <p class="place">Montreal, Canada</p>
+  </header>
+
+  <p class="lead">
+    I work on machine learning: how methods behave on real data, where they
+    fail, and what the numbers actually support. Most of what I publish is
+    built to be read and re-run rather than taken on trust.
+  </p>
+
+  <h2>Education</h2>
+  <dl class="edu">
+    <div>
+      <dt>
+        PhD, Computer Science
+        <span class="school">Université du Québec à Montréal (UQAM), Canada</span>
+      </dt>
+      <dd>in progress</dd>
+    </div>
+    <div>
+      <dt>
+        Master's degree and Engineering degree
+        <span class="school">
+          École Nationale des Sciences de l'Informatique (ENSI), Tunisia
+        </span>
+      </dt>
+    </div>
+    <div>
+      <dt>
+        Bachelor's degree
+        <span class="school">
+          Higher Institute of Technological Studies of Radès, Tunisia
+        </span>
+      </dt>
+    </div>
+  </dl>
+
+  <h2>Open source</h2>
+
+  <article class="project">
+    <h3><a href="https://github.com/ELounissi/open-ml-notebooks">open-ml-notebooks</a></h3>
+    <p>
+      A free book of 86 executed Jupyter notebooks covering machine learning,
+      deep learning and reinforcement learning, one method per notebook. Each
+      chapter derives the maths, implements the method from scratch, then
+      measures where it wins and where it loses on shared open datasets. No
+      number appears in the text unless the notebook printed it.
+    </p>
+    <p class="tags">Python · scikit-learn · PyTorch · MIT and CC BY 4.0</p>
+  </article>
+
+  <article class="project">
+    <h3><a href="https://github.com/ELounissi/Computer-Vision">Computer-Vision</a></h3>
+    <p>
+      Shape descriptors worked through by hand: raw, central, normalised and Hu
+      moments computed from images, with the invariances checked rather than
+      assumed. Includes a dataset of one letter rendered at every angle through
+      a full rotation, built so a descriptor claiming rotation invariance can
+      be tested against 360 cases instead of an argument.
+    </p>
+    <p class="tags">Python · Jupyter · image moments · shape analysis</p>
+  </article>
+
+  <p class="note">
+    Some of my other work is private for now and will be opened as it is
+    finished.
+  </p>
+
+  <h2>Contact</h2>
+  <ul class="links">
+    <li><a href="mailto:elyes.lounissi@ensi-uma.tn">elyes.lounissi@ensi-uma.tn</a></li>
+    <li><a href="https://github.com/ELounissi">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/elyes-lounissi/">LinkedIn</a></li>
+    <li><a href="https://orcid.org/0009-0001-1385-5070">ORCID</a></li>
+  </ul>
+
+  <footer>
+    Built as one static page, no trackers and no external requests.
+  </footer>
+
+</main>
+</body>
+</html>
